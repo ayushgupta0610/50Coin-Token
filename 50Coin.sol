@@ -1,4 +1,4 @@
-// Contract Address: 0x3838195e3f051011309aac1f21792ea9f24d68c6
+// Contract Address: 0x668dc7325732a3f7e8075b616b66b9ef1e7f6aa3
 pragma solidity ^0.4.18;
 
 contract Token {
@@ -86,8 +86,8 @@ contract FiftyCoinToken is StandardToken { // Update the contract name.
     // This is a constructor function 
     // which means the following function name has to match the contract name declared above
     function FiftyCoinToken() {
-        balances[msg.sender] = 50000000 * 10^18;               // Give the creator all initial tokens. This is set to 1000 for example. If you want your initial tokens to be X and your decimal is 5, set this value to X * 100000. 
-        totalSupply = 50000000 * 10^18;                        // Update total supply (1000 for example) 
+        balances[msg.sender] = 50000000000000000000000000;               // Give the creator all initial tokens. This is set to 50000000 for example. If you want your initial tokens to be X and your decimal is 5, set this value to X * 100000. 
+        totalSupply = 50000000000000000000000000;                        // Update total supply (1000 for example) 
         name = "50 Coin";                                   // Set the name for display purposes 
         decimals = 18;                                               // Amount of decimals for display purposes 
         symbol = "FFTY";                                             // Set the symbol for display purposes 
